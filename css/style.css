@@ -197,9 +197,21 @@ button {
     padding-top: 2rem;
 }
 
-.doctors .box-container .box .share b, p1 {
+.doctors .box-container .box .share b, p1{
    color:var(--light-color);
-   font-size: 12pt;
+   font-size: 16pt;
+}
+.doctors .box-container .box.share, p1{
+    margin-left: 5%;
+    color: black;
+    
+    background: transparent;
+   
+}
+
+.doctors .box-container .box.share, p1:hover{
+    background-color: var(--green);
+    color: white;
 }
 
 
@@ -219,6 +231,7 @@ button {
     color:#fff;
     box-shadow: var(--box-shadow);
 }
+
 
 
 
