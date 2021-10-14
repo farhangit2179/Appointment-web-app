@@ -254,6 +254,7 @@ button {
 
 
 .footer .box-container{
+    position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
     gap:2rem;
