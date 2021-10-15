@@ -18,7 +18,7 @@ function checkInputs() {
 	const lastnameValue=lastname.value.trim();
 	
 
-	if(firstnameValue === '' ) {
+	if( firstnameValue.length < 1) {
 		setErrorFor(firstname, 'Firstname cannot be blank');
 	} else {
 		setSuccessFor(firstname);
@@ -26,15 +26,15 @@ function checkInputs() {
 
 	
 
-	if(lastnameValue === '') {
+	if(lastnameValue.length <1) {
 		setErrorFor(lastname, 'Lastname cannot be blank');
 	} else {
-		setSuccessFor(larstname);
+		setSuccessFor(lastname);
 	}
 
 	
-	if(usernameValue === '') {
-		setErrorFor(username, 'Username cannot be blank');
+	if(usernameValue.length < 5) {
+		setErrorFor(username, 'Username must be 5 character long');
 	} else {
 		setSuccessFor(username);
 	}
