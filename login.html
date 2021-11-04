@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+	<link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+
+	<div class="image">
+        <img src="image/home-img.svg" alt="">
+    </div>
+
+	<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-heartbeat"></i> medcare. </a>
+
+    <nav class="navbar">
+        <a href="index.html">home</a>
+		<a href="doc.html">Emergency contact</a>  
+        
+        <a href="index.html">Doctors Availability</a>
+        <a href="rego-form.html">Book Appointment</a>
+        
+        <a href="index.html">Log In</a>
+    </nav>
+
+    <div id="menu-btn" class="fas fa-bars"></div>
+
+</header>
+
+<!-- header section ends -->
+
+    <div class="container">
+		<h1 class="label">User Login</h1>
+		<form class="login_form" action="connect.php" method="POST" name="form" onsubmit="return validated()">
+			<div class="font">User Name</div>
+			<input autocapitalize="off" autocomplete="off" type="text" id="email" name="email">
+			<div id="email_error">Incorrect User Id or username should be 5 character long</div>
+			<div class="font">Password</div>
+			<input type="password" name="password" id="password">
+			<div id="pass_error"> Incorrect Password</div>
+			<button href="index.html" type="submit" name="submit">Login</button>
+		</form>
+	</div>	
+
+
+
+
+
+
+	<script src="js/valid.js"></script>
+    
+</body>
+</html>
